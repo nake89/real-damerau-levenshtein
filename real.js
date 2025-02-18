@@ -45,9 +45,8 @@ function dam(str1, str2) {
     return d[getIndex(ROW_WIDTH, a.length, b.length)];
   };
   const steps = calculateStringDistance(str1, str2)
-  const length = Math.max(str1, str2)
+  const length = Math.max(str1.length, str2.length)
   const relative = length === 0 ? 0 : (steps / length);
   const similarity = 1 - relative
   return { steps, relative, similarity }
 }
-
