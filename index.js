@@ -1,4 +1,4 @@
-function dam(str1, str2) {
+export default function dam(str1, str2) {
 
   const da = new Uint32Array(0x10000);
   const getIndex = (rowWidth, x, y) => {
