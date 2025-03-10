@@ -1,4 +1,4 @@
-export default function dam(str1, str2) {
+function dam(str1, str2) {
 
   const da = new Uint32Array(0x10000);
   const getIndex = (rowWidth, x, y) => {
@@ -50,3 +50,5 @@ export default function dam(str1, str2) {
   const similarity = 1 - relative
   return { steps, relative, similarity }
 }
+
+module.exports = dam
